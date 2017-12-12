@@ -19,6 +19,8 @@ function string2unicodes(str) {
 gulp.task("default",function() {
     return gulp.src(['./icons/*.svg'])
     .pipe(iconfont({
+		normalize:true ,
+		fontHeight: 1001,
       fontName: 'nex-iconfont', // required
       //prependUnicode: true, // recommended option
       formats: ['ttf', 'eot', 'woff', 'svg'], // default, 'woff2' and 'svg' are available
